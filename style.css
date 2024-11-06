@@ -23,6 +23,7 @@
     font-size: 300px;
     text-align: center;
     color: var(--white);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .animation-box > div {
     background-color: var(--green);
