@@ -5,50 +5,57 @@
     box-sizing: border-box;
 }
 :root {
-    --white: #EAF6FF;
-    --black: #161B38;
-    --green: #87FF65;
+    --white: #f7f0eb;
+    --black: #604330;
+    --brown: #ad876a;
     --blue: #009FFD;
     --purple: #C04CFD;
 }
 
-.animation-box{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-image: radial-gradient(var(--purple), var(--black));
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    animation: play 1.4s linear infinite;
+body {
+    background-color: var(--white);
 }
-@keyframes animation {
-    0% {
-        background-image: radial-gradient(var(--purple) 30%, var(--black) 70%);
-    }
-    50% {
-        background-image: radial-gradient(var(--purple) 70%, var(--black) 30% );
-    }
-    100% {
-        background-image: radial-gradient(var(--purple) 30%, var(--black) 70%);
-    }
+header {
+    display: flex;
+    color: var(--black);
+    font-size: 40px;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 2px solid var(--brown);
+}
+.spacer {
+    text-align: center;
+    width: 500px;
+}
+.dropdown-menu {
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-menu > img {
+    height: 40px;
+    opacity: 70%;
+}
+.menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #C04CFD;
+    height: 200px;
+    width: 400px;
+    top: 66px;
+}
+
+.dropdown-menu:hover .menu {
+    display: block;
 }
 .playwrite-gb-s {
     font-family: "Send Flowers", cursive;
     font-weight: 400;
     font-style: normal;
-  }
-.animation-box h1 {
-    font-size: 300px;
-    text-align: center;
-    color: var(--white);
 }
-.animation-box > div {
-    display: none;
-    background-color: var(--purple);
-    height: 200px;
-    width: 100%;
-}
+
+
 main{
     display: grid;
     grid-template-columns: 200px 200px;
@@ -59,8 +66,5 @@ section{
     display: flex;
     grid-row: 1/3;
     grid-column: 1/2;
-    gap: 20px
-    ;
+    gap: 20px;
 }
-
-
