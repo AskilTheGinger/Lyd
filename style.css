@@ -6,7 +6,7 @@
 }
 :root {
     --white: #EAF6FF;
-    --black: #0B2027;
+    --black: #161B38;
     --green: #87FF65;
     --blue: #009FFD;
     --purple: #C04CFD;
@@ -24,13 +24,13 @@
 }
 @keyframes animation {
     0% {
-        background-image: radial-gradient(var(--purple), var(--black));
+        background-image: radial-gradient(var(--purple) 30%, var(--black) 70%);
     }
     50% {
-        background-image: radial-gradient(var(--purple), var(--purple), var(--black));
+        background-image: radial-gradient(var(--purple) 70%, var(--black) 30% );
     }
     100% {
-        background-image: radial-gradient(var(--purple), var(--black));
+        background-image: radial-gradient(var(--purple) 30%, var(--black) 70%);
     }
 }
 .playwrite-gb-s {
