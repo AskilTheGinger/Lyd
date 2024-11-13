@@ -27,6 +27,28 @@ header {
     text-align: center;
     width: 500px;
 }
+.dropdown-menu {
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-menu > img {
+    height: 40px;
+    opacity: 70%;
+}
+.menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #C04CFD;
+    height: 200px;
+    width: 400px;
+    top: 66px;
+}
+
+.dropdown-menu:hover .menu {
+    display: block;
+}
 .playwrite-gb-s {
     font-family: "Send Flowers", cursive;
     font-weight: 400;
