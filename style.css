@@ -19,7 +19,7 @@ header {
     display: flex;
     color: var(--black);
     font-size: 40px;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
     border-bottom: 2px solid var(--brown);
 }
@@ -29,6 +29,7 @@ header {
 }
 .dropdown-menu {
     height: 46px;
+    width: fit-content;
     display: flex;
     align-items: center;
 }
