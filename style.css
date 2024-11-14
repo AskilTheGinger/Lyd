@@ -69,9 +69,9 @@ section{
 }
 .main {
     display: grid;
-    background-color: #C04CFD;
+    background-color: var(--white);
     grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px ;
-    grid-template-rows: 400px;
+    grid-template-rows: 240px 400px;
     gap: 20px;
     justify-content: center;
 }
@@ -89,4 +89,14 @@ section{
     background-color: #009FFD;
     grid-column: 9/13;
     height: 200px;
+}
+.main > h1 {
+    grid-column: 3/11;
+    text-align: center;
+    font-size: 100px;
+    color: var(--black);
+    margin-top: 80px;
+}
+h2 {
+    text-align: center;
 }
