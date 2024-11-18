@@ -1,54 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Komprimering av Lyd</title>
-    <link rel="stylesheet" href="style.css">
+
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            
+
         }
 
-        article::first-letter{
+        :root {
+            --white: #f7f0eb;
+            --black: #604330;
+            --brown: #ad876a;
+            --blue: #009FFD;
+            --purple: #C04CFD;
+        }
+
+        body {
+            background: var(--black);
+            color: var(--white);
+            ;
+        }
+
+        article::first-letter {
             font-weight: bolder;
         }
-        main{ 
+
+        main {
             display: grid;
             width: fit-content;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 20vh;
+            max-width: 800px;
+            margin: auto;
+        }
 
-            grid-template-columns:200 px, 20vh 20vh ;
-            grid-template-rows: 30% 30% 30%;
-        
+        main>* {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+    
+
+        }
+
+        button {
+            background-color: var(--purple);
+            padding: 10px;
+            width: 150px;
+            border:solid 2p darkmagenta ;
+
+        }
+
+        #komp-overs {
+            grid-column: 1/3;
+            text-align: center;
+        }
+
+        main>article {
+            grid-row: 2/4;
+        }
+
+        #uncompressed {
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+
+        #compressed {
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+
+        #sound1>* {
+            text-decoration: none;
+            background-color: var(--blue);
         }
     </style>
 </head>
+
 <body>
     <header></header>
     <main>
-        <h1>Komprimering av lyd</h1>
+        <h1 id="komp-overs">Komprimering av lyd</h1>
         <article>
             Komprimering er hovedsaklig en måte for at en lydfil skal ta mindre plass.
-            En ukomprimert lyd vil ha mye data fordi den tar opp hver eneste lyd i nærheten i hvær eneste instans på alle lydnivå. 
-            Dette fører til en enorm mengde med unødvendig data kan enkelt ta mye lagringsplass om det er en lang nok lydfil.
+            En ukomprimert lyd vil ha mye data fordi den tar opp hver eneste lyd i nærheten i hvær eneste instans på
+            alle lydnivå.
+            Dette fører til en enorm mengde med unødvendig data kan enkelt ta mye lagringsplass om det er en lang nok
+            lydfil.
             Når man snakker om lydfiler og Komprimering kan man dele lydfiler opp i hovedsakliginn i 3 typer:
             Ukomprimerte lydfiler, tapsfri komprimering og tapsfull komprimering.
-            
-            
+
+
         </article>
-        <div class="uncompressed">
-                <h3>Et ukomprimert soundbite av en hi-hat som er 122kb i størrelse</h3>
-                <audio src="soundbites/uncompressed-hi-hat.wav" controls ></audio>
-                <h6>(merk hvor mye bakgrunnstøy er med i lydklippet)</h6>
-            </div>
-            <div class="compressed">
-                <h3>Komprimert soundbite av en hi-hat som er 34kb i størrelse</h3>
-                <audio src="soundbites/compressed-hi-hat.mp3" controls></audio>
-                
-            </div>
+        <div id="uncompressed">
+            <h3>Et ukomprimert soundbite av en hi-hat som er 122kb i størrelse</h3>
+            <button onclick="playSound1()" class="button"> Ukomprimert lyd</button>
+            <h6>(merk hvor mye bakgrunnstøy er med i lydklippet)</h6>
+        </div>
+        <div id="compressed">
+            <h3>Komprimert soundbite av en hi-hat som er 34kb i størrelse</h3>
+            <button onclick="playSound2()" class="button"> Komprimert lyd</button>
+
+
+        </div>
     </main>
+    <audio src="soundbites/uncompressed-hi-hat.wav" id="sound1"></audio>
+    <audio src="soundbites/compressed-hi-hat.mp3" id="sound2"></audio>
 </body>
+<script>
+    function playSound1() {
+        const sound = document.getElementById('sound1');
+        sound.play();
+
+    }
+    function playSound2() {
+        const sound = document.getElementById('sound2');
+        sound.play();
+
+    }
+</script>
+
 </html>
