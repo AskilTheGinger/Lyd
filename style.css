@@ -25,11 +25,16 @@ h1 {
 }
 header {
     display: flex;
-    color: var(--black);
+    background-color: var(--black);
     font-size: 40px;
     justify-content: space-between;
     padding: 5px;
     align-items: center;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 .spacer {
     text-align: center;
@@ -103,15 +108,15 @@ section{
     display: grid;
     background-color: none;
     grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px ;
-    grid-template-rows: 240px 500px 100px;
+    grid-template-rows: 400px 500px 100px;
     gap: 30px;
     justify-content: center;
+    align-items: center;
 }
 .main > div {
     padding: 10px;
     border-radius: 30px;
     height: 500px;
-    margin-top: 100px;
     background-color: var(--black);
     box-shadow: 5px 0 20px var(--purple), 0 5px 15px var(--orange), 0 0 5px var(--orangeL), 0 0 2.5px white;
 }
