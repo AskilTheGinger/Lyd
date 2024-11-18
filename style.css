@@ -108,7 +108,7 @@ section{
     display: grid;
     background-color: none;
     grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px ;
-    grid-template-rows: 400px 500px 100px;
+    grid-template-rows: 410px 400px 100px;
     gap: 30px;
     justify-content: center;
     align-items: center;
@@ -116,7 +116,7 @@ section{
 .main > div {
     padding: 10px;
     border-radius: 30px;
-    height: 500px;
+    height: 400px;
     background-color: var(--black);
     box-shadow: 5px 0 20px var(--purple), 0 5px 15px var(--orange), 0 0 5px var(--orangeL), 0 0 2.5px white;
 }
