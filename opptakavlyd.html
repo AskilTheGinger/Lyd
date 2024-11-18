@@ -10,36 +10,84 @@
 
     <style>
 
-        h1{
+   
+
+        .opptaktittel{
+            margin: 100px 0px;
             text-align: center;
+            grid-column: 1/4;
         }
+
 
         .micgif{
-            left: 1000px;
+            margin: auto;
         }
 
+        .faktatekst{
+            margin: auto;
+            text-align: center;
+            width: 640px;
+            color: white;
+        }
+        .spenningsgraf{
+            margin: auto;
+        }
+
+        .faktatekst2{
+            grid-column: 3/4;
+            grid-row: 3/4;
+            color: white;
+        }
+
+        body{
+            display: grid;
+            grid-template-columns: 640px 640px 640px;
+            grid-template-rows: 250px 450px 300px;
+        }
 
 
     </style>
 </head>
 <body>
 
+    <div class="opptaktittel">
+
     <h1>Opptak av lyd</h1>
     
-    
-    <div class="micgif">
-        <img src="bilder/mic.gif"
-    style="
-    width: 640px;
-    height: 360px;">
     </div>
 
-    <div class="faktatekst">
-        <p>Det første som trengs for å skape lyd e
-            r bevegelse av luft. Når man en lyd, lager det lydbølger som
-             treffer mikrofonen. I mikrofonen treffer lydbølgene en membran. Membranen er
-              koblet til en spole  </p>
-    </div>
+    
+        <div class="micgif">
+            <img src="bilder/susmic.gif"
+        style="
+        width: 538px;
+        height: 303px;">
+        </div>
+
+        <div class="faktatekst">
+            <p>Det første som trengs for å skape lyd e
+                r bevegelse av luft. Når man en lyd, lager det lydbølger som
+                treffer mikrofonen. I mikrofonen treffer lydbølgene en membran. Membranen er
+                koblet til en spole som dermed vil gå fram og tilbake langs en magnet. Da 
+                skapes det elektriske signaler som tas opp og lagres digitalt på en datamaskin eller forsterker.
+                Membranen tar opp forskjellige styrkegrader på lyd og forskjellige frekvenser.  </p>
+        </div>
+
+
+        <div class="spenningsgraf">
+            <img src="bilder/spenningsgraf.png"
+            style="
+            width: 538px;
+            height: 420px;">
+
+        </div>
+
+        
+        <div class="faktatekst2">
+            <p>Membranen vil så regule
+                re seg etter det og gi ulik mengde spenning mellom spolen og magneten. Det vil dermed bli tatt
+                opp med forskjellig spenning over tid.</p>
+        </div>
 
 
 </body>
