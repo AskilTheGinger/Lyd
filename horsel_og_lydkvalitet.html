@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hørsel og lydkvalitet</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
         img {
             width: 100%;
         }
@@ -14,20 +13,24 @@
         .tupe{
             border: 2px solid black;
         }
+        #overlay{
+            text-align: center;
+            font-size: 60px;
+        }
+        #porder {
+            border: 2px solid black;
+            padding: 10px;
+            width: 20%;
+            margin: 20px;
+        }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hørsel og lydkvalitet</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hørsel og Lydkvalitet</h1>
-    <img src="https://w7.pngwing.com/pngs/536/360/png-transparent-sound-audio-mixers-wave-sound-angle-text-logo-thumbnail.png">
-    
+    <h1 id="overlay">Hørsel og Lydkvalitet</h1>
    <div>
         <h2>Hørsel</h2>
         <div>
-            <p>rosa</p>
+            <p id="porder">Hørselen er aller best på å skille lyder mellom 2 kHz og 5 kHz, som er ganske naturlig siden mennesketale foregår blandt dette frekvensområdet</p>
         </div>
    </div>
 
