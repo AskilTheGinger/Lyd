@@ -10,10 +10,45 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            
+        }
+
+        article::first-letter{
+            font-weight: bolder;
+        }
+        main{ 
+            display: grid;
+            width: fit-content;
+
+            grid-template-columns:200 px, 20vh 20vh ;
+            grid-template-rows: 30% 30% 30%;
+        
         }
     </style>
 </head>
 <body>
-    
+    <header></header>
+    <main>
+        <h1>Komprimering av lyd</h1>
+        <article>
+            Komprimering er hovedsaklig en måte for at en lydfil skal ta mindre plass.
+            En ukomprimert lyd vil ha mye data fordi den tar opp hver eneste lyd i nærheten i hvær eneste instans på alle lydnivå. 
+            Dette fører til en enorm mengde med unødvendig data kan enkelt ta mye lagringsplass om det er en lang nok lydfil.
+            Når man snakker om lydfiler og Komprimering kan man dele lydfiler opp i hovedsakliginn i 3 typer:
+            Ukomprimerte lydfiler, tapsfri komprimering og tapsfull komprimering.
+            
+            
+        </article>
+        <div class="uncompressed">
+                <h3>Et ukomprimert soundbite av en hi-hat som er 122kb i størrelse</h3>
+                <audio src="soundbites/uncompressed-hi-hat.wav" controls ></audio>
+                <h6>(merk hvor mye bakgrunnstøy er med i lydklippet)</h6>
+            </div>
+            <div class="compressed">
+                <h3>Komprimert soundbite av en hi-hat som er 34kb i størrelse</h3>
+                <audio src="soundbites/compressed-hi-hat.mp3" controls></audio>
+                
+            </div>
+    </main>
 </body>
 </html>
