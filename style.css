@@ -8,6 +8,8 @@
     --black: #120921;
     --purple: #a930d2;
     --purple2: #4d0e58;
+    --orange: #ff7824;
+    --orangeL: #ffd382;
 }
 body {
     background-color: var(--black);
@@ -19,21 +21,22 @@ h1 {
     color: white;
     width: 100%;
     text-align: center;
-    text-shadow: 1px 0 8px var(--purple), 0 1px 6px rgb(255, 120, 36), 0 0 2px rgb(255, 211, 130), 0 0 1px white;
+    text-shadow: 1px 0 8px var(--purple), 0 1px 6px var(--orange), 0 0 2px var(--orangeL), 0 0 1px white;
 }
 header {
     display: flex;
     color: var(--black);
     font-size: 40px;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
+    align-items: center;
 }
 .spacer {
     text-align: center;
     width: 500px;
 }
 .dropdown-menu {
-    height: 46px;
+    height: 60px;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -71,14 +74,15 @@ header {
     width: 100%;
     text-align: center;
     letter-spacing: 0;
-    text-shadow: 10px 0 80px var(--purple), 0 10px 60px rgb(255, 120, 36), 0 0 20px rgb(255, 211, 130), 0 0 10px white;
+    text-shadow: 10px 0 80px var(--purple), 0 10px 60px var(--orange), 0 0 20px var(--orangeL), 0 0 10px white;
+    filter: blur(1px);
 }
 img.bolge {
     position: absolute;
     top: 80%;
     width: 100%;
     height: 300px;
-    filter: invert(100%) drop-shadow(0 0 30px rgb(255, 120, 36));
+    filter: invert(100%) drop-shadow(0 0 30px var(--orange));
 }
 .opening > h1:first-child {
     filter: blur(5px);
@@ -99,34 +103,41 @@ section{
     display: grid;
     background-color: none;
     grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px ;
-    grid-template-rows: 240px 400px;
-    gap: 20px;
+    grid-template-rows: 240px 500px 100px;
+    gap: 30px;
     justify-content: center;
 }
 .main > div {
     padding: 10px;
     border-radius: 30px;
-    height: 400px;
+    height: 500px;
+    margin-top: 100px;
+    background-color: var(--black);
+    box-shadow: 5px 0 20px var(--purple), 0 5px 15px var(--orange), 0 0 5px var(--orangeL), 0 0 2.5px white;
+}
+.main > div:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 .main > div.en {
-    background-color: #009FFD;
     grid-column: 1/5;
 }
 .main > div.to {
-    background-color: #009FFD;
     grid-column: 5/9;
 }
 .main > div.tre {
-    background-color: #009FFD;
     grid-column: 9/13;
 }
 .main > h1 {
     grid-column: 3/11;
     text-align: center;
     font-size: 100px;
-    margin-top: 80px;
+    margin-top: 125px;
     font-weight: 500;
 }
 h2 {
     text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
 }
