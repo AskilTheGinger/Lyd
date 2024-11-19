@@ -172,3 +172,7 @@ a > div:hover {
     margin-top: 125px;
     font-weight: 500;
 }
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
