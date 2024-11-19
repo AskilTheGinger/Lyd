@@ -55,13 +55,33 @@ header {
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: #C04CFD;
+    background-color: var(--black);
     height: 200px;
     width: 400px;
     top: 66px;
+    font-size: 15px;
 }
 .dropdown-menu:hover .menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu > a > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.menu h2 {
+    margin-top: 0;
+    font-weight: 100px;
 }
 .opening {
     background-image: radial-gradient(circle, var(--purple2) 0%, #1c0429 55%,  black 100%);
@@ -117,9 +137,12 @@ a {
     text-decoration: none;
 }
 a > div {
-    height: 80px;
-    width: 100%;
-    background-color: #ff7824;
+    height: 40px;
+    width: 380px;
+    background-color: var(--purple2);
+    opacity: 80%;
+    margin: 0;
+    border-radius: 10px;
 }
 a.link > div {
     padding: 10px;
@@ -148,10 +171,4 @@ a > div:hover {
     font-size: 100px;
     margin-top: 125px;
     font-weight: 500;
-}
-h2 {
-    text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
 }
