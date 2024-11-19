@@ -100,7 +100,7 @@ h2 {
     text-align: center;
     letter-spacing: 0;
     text-shadow: 10px 0 80px var(--purple), 0 10px 60px var(--orange), 0 0 20px var(--orangeL), 0 0 10px white;
-    filter: blur(1px);
+    filter: blur(0.5px);
 }
 img.bolge {
     position: absolute;
