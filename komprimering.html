@@ -11,11 +11,7 @@
         body {
             background: var(--black);
             color: var(--white);
-            ;
-        }
-
-        article::first-letter {
-            font-weight: bolder;
+            text-align: center;
         }
 
         main {
@@ -23,43 +19,51 @@
             width: fit-content;
             grid-template-columns: 1fr 1fr;
             grid-auto-rows: 20vh;
-            max-width: 800px;
+            max-width: 60%;
             margin: auto;
-        }
-
-        main>* {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-    
-
         }
 
         button {
             background-color: var(--purple);
             padding: 10px;
             width: 150px;
-            border: solid 2p darkmagenta ;
-
+            border: solid 2p darkmagenta;
         }
 
         #komp-overs {
             grid-column: 1/3;
-            text-align: center;
+            grid-row: 1/2;
+            position: relative;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        main>article {
+        #tekstlyd {
             grid-row: 2/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
 
         #uncompressed {
             grid-row: 2/3;
             grid-column: 2/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         #compressed {
             grid-row: 3/4;
             grid-column: 2/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         #sound1>* {
@@ -72,50 +76,51 @@
 <body>
     <header>
         <div class="spacer">
-           <div class="dropdown-menu">
-               <img src="bilder/burger-menu.webp" alt="dropdown">
-               <div class="menu">
-                   <a href="index.html">
-                       <div class="home">
-                           <h2>HOME</h2>
-                       </div>
-                   </a>
-                   <a href="komprimering.html">
-                       <div class="komp">
-                           <h2>KOMPRIMERING</h2>
-                       </div>
-                   </a>
-                   <a href="opptakavlyd.html">
-                       <div class="opp">
-                           <h2>OPPTAK AV LYD</h2>
-                       </div>
-                   </a>
-                   <a href="horsel_og_lydkvalitet.html">
-                       <div class="hors">
-                           <h2>HØRSEL OG LYDKVALITET</h2>
-                       </div>
-                   </a>
-               </div>
-           </div>
-       </div>
-       <div class="logo">
-           <h1>LYD</h1>
-       </div>
-       <div class="spacer"></div>
-   </header>
+            <div class="dropdown-menu">
+                <img src="burger-menu.webp" alt="dropdown">
+                <div class="menu">
+                    <a href="index.html">
+                        <div class="home">
+                            <h2>HOME</h2>
+                        </div>
+                    </a>
+                    <a href="komprimering.html">
+                        <div class="komp">
+                            <h2>KOMPRIMERING</h2>
+                        </div>
+                    </a>
+                    <a href="opptakavlyd.html">
+                        <div class="opp">
+                            <h2>OPPTAK AV LYD</h2>
+                        </div>
+                    </a>
+                    <a href="horsel_og_lydkvalitet.html">
+                        <div class="hors">
+                            <h2>HØRSEL OG LYDKVALITET</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <h1>LYD</h1>
+        </div>
+        <div class="spacer"></div>
+    </header>
     <main>
         <h1 id="komp-overs">Komprimering av lyd</h1>
-        <article>
+        <div id="tekstlyd">
             <p>Komprimering er hovedsaklig en måte for at en lydfil skal ta mindre plass.
                 En ukomprimert lyd vil ha mye data fordi den tar opp hver eneste lyd i nærheten i hvær eneste instans på
                 alle lydnivå.
-                Dette fører til en enorm mengde med unødvendig data kan enkelt ta mye lagringsplass om det er en lang nok
+                Dette fører til en enorm mengde med unødvendig data kan enkelt ta mye lagringsplass om det er en lang
+                nok
                 lydfil.
                 Når man snakker om lydfiler og Komprimering kan man dele lydfiler opp i hovedsakliginn i 3 typer:
                 Ukomprimerte lydfiler, tapsfri komprimering og tapsfull komprimering.
             </p>
 
-        </article>
+        </div>
         <div id="uncompressed">
             <p>Et ukomprimert soundbite av en hi-hat som er 122kb i størrelse</p>
             <button onclick="playSound1()" class="button"> Ukomprimert lyd</button>

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyd og Lasagne</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
     <header>
-         <div class="spacer">
+        <div class="spacer">
             <div class="dropdown-menu">
-                <img src="bilder/burger-menu.webp" alt="dropdown">
+                <i class="fa-solid fa-bars"></i>
                 <div class="menu">
                     <a href="index.html">
                         <div class="home">
@@ -40,28 +46,32 @@
         </div>
         <div class="spacer"></div>
     </header>
-    <img class="bolge" src="./bilder/lydbolge.png" alt="">
     <div class="opening">
         <h1>LYD</h1>
         <h1>LYD</h1>
     </div>
+    <img class="bolge" src="lydbolge.png" alt="">
+
     <div class="main">
         <h1>Lydbølger og Lyd</h1>
-        <a class="en link" href="opptakavlyd.html">
-            <div>
-                <h2>Opptak Av Lyd</h2>
-            </div>
-        </a>
-        <a class="to link" href="komprimering.html">
-            <div>
-                <h2>Komprimering</h2>
-            </div>
-        </a>
-        <a class="tre link" href="horsel_og_lydkvalitet.html">
-            <div>
-                <h2>Hørsel og lydkvalitet</h2>
-            </div>
-        </a>
+        <div id="fancybokser">
+            <a class="en link" href="opptakavlyd.html">
+                <div>
+                    <h2>Opptak Av Lyd</h2>
+                </div>
+            </a>
+            <a class="to link" href="komprimering.html">
+                <div>
+                    <h2>Komprimering</h2>
+                </div>
+            </a>
+            <a class="tre link" href="horsel_og_lydkvalitet.html">
+                <div>
+                    <h2>Hørsel og lydkvalitet</h2>
+                </div>
+            </a>
+        </div>
     </div>
 </body>
+
 </html>

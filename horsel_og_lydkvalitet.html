@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,85 +11,108 @@
             width: 100%;
         }
 
-        .tupe{
-            border: 2px solid black;
+        .tupe {
+            border-radius: 10px;
             width: 40%;
-            margin-left: 50px;
-            margin-top: 30px;
             background-color: rgb(94, 13, 78);
             color: rgb(89, 89, 177);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 0 15px var(--purple);
         }
-        #overlay{
+
+        #overlay {
             text-align: center;
             font-size: 60px;
+            margin: 70px 0px 70px 0px;
         }
-        div > p {
+
+
+
+        div>p {
+
             border: 2px solid black;
+            border-radius: 10px;
             padding: 10px;
             width: 80%;
             margin: 20px;
-            background-color:blueviolet;
+            background-color: blueviolet;
             color: rgb(134, 185, 228);
         }
+
         p {
             width: 300px;
+            text-align: center;
         }
 
+        #bokskvalitet {
+            display: flex;
+            justify-content: space-around;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="spacer">
-           <div class="dropdown-menu">
-               <img src="bilder/burger-menu.webp" alt="dropdown">
-               <div class="menu">
-                   <a href="index.html">
-                       <div class="home">
-                           <h2>HOME</h2>
-                       </div>
-                   </a>
-                   <a href="komprimering.html">
-                       <div class="komp">
-                           <h2>KOMPRIMERING</h2>
-                       </div>
-                   </a>
-                   <a href="opptakavlyd.html">
-                       <div class="opp">
-                           <h2>OPPTAK AV LYD</h2>
-                       </div>
-                   </a>
-                   <a href="horsel_og_lydkvalitet.html">
-                       <div class="hors">
-                           <h2>HØRSEL OG LYDKVALITET</h2>
-                       </div>
-                   </a>
-               </div>
-           </div>
-       </div>
-       <div class="logo">
-           <h1>LYD</h1>
-       </div>
-       <div class="spacer"></div>
-   </header>
+            <div class="dropdown-menu">
+                <img src="bilder/burger-menu.webp" alt="dropdown">
+                <div class="menu">
+                    <a href="index.html">
+                        <div class="home">
+                            <h2>HOME</h2>
+                        </div>
+                    </a>
+                    <a href="komprimering.html">
+                        <div class="komp">
+                            <h2>KOMPRIMERING</h2>
+                        </div>
+                    </a>
+                    <a href="opptakavlyd.html">
+                        <div class="opp">
+                            <h2>OPPTAK AV LYD</h2>
+                        </div>
+                    </a>
+                    <a href="horsel_og_lydkvalitet.html">
+                        <div class="hors">
+                            <h2>HØRSEL OG LYDKVALITET</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <h1>LYD</h1>
+        </div>
+        <div class="spacer"></div>
+    </header>
     <h1 id="overlay">Hørsel og Lydkvalitet</h1>
-   <div class="tupe">
-        <h2>Hørsel</h2>
-        <div>
-            <p>Hørselen er best på å skille lyder mellom 2 kHz og 5 kHz, som er ganske naturlig siden mennesketale foregår i dette frekvensområdet.</p>
-            <p>Mennesket kan oppfatte lyder fra omkring 20 hZ til 20 000 hZ. Mange dyr kan høre lyder som går over dette tallet</p>
-            <p></p>
-            <p>Høreapparater kan brukes til å styrke hørselen. De består av: 1. En mikrofon som omformer lydbølger til elektriske signaler. 2. En signalbehandler med batteri, som forsterker elektriske signaler fra mikrofonen. 3. En lydgiver eller telefon, som brukes til å omforme forsterkede elektriske signaler til lydbølger.</p>
+    <div id="bokskvalitet">
+        <div class="tupe">
+            <h2>Hørsel</h2>
+
+            <p>Hørselen er best på å skille lyder mellom 2 kHz og 5 kHz, som er ganske naturlig siden mennesketale
+                foregår i dette frekvensområdet.</p>
+            <p>Mennesket kan oppfatte lyder fra omkring 20 hZ til 20 000 hZ. Mange dyr kan høre lyder som går over
+                dette tallet</p>
+
+            <p>Høreapparater kan brukes til å styrke hørselen. De består av: 1. En mikrofon som omformer lydbølger
+                til elektriske signaler. 2. En signalbehandler med batteri, som forsterker elektriske signaler fra
+                mikrofonen. 3. En lydgiver eller telefon, som brukes til å omforme forsterkede elektriske signaler
+                til lydbølger.</p>
         </div>
-   </div>
-   <div class="tupe">
-        <h2>Lydkvalitet</h2>
-        <div>
-            <p>Vi vurderer lydkvalitet basert på presisjonen, trofastheten, eller hvor forstårlig lyden som kommer fra et elektronisk redskap er</p>
-            <p>Kvaliteten av lydens reproduksjon eller opptak er avhengig av mange faktorer, inkludert redskapet brukt for å skape lyden</p>
-            <p>Hvis en lydfil skal komprimeres og dekomprimeres gjennom flere ledd, kan en ellers god lyd få stygge feil av en kompresjon som var god i utgangspunktet, blir påvirket av nyere komprimerte ledd.</p>
-            <p></p>
+        <div class="tupe">
+            <h2>Lydkvalitet</h2>
+            <p>Vi vurderer lydkvalitet basert på presisjonen, trofastheten, eller hvor forstårlig lyden som kommer
+                fra et elektronisk redskap er</p>
+            <p>Kvaliteten av lydens reproduksjon eller opptak er avhengig av mange faktorer, inkludert redskapet
+                brukt for å skape lyden</p>
+            <p>Hvis en lydfil skal komprimeres og dekomprimeres gjennom flere ledd, kan en ellers god lyd få stygge
+                feil av en kompresjon som var god i utgangspunktet, blir påvirket av nyere komprimerte ledd.</p>
         </div>
-   </div>
+    </div>
 
 </body>
+
 </html>
