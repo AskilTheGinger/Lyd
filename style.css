@@ -108,29 +108,38 @@ section{
     display: grid;
     background-color: none;
     grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px ;
-    grid-template-rows: 400px 500px 100px;
+    grid-template-rows: 410px 400px 100px;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
-.main > div {
+a {
+    text-decoration: none;
+}
+a > div {
+    height: 80px;
+    width: 100%;
+    background-color: #ff7824;
+}
+a.link > div {
     padding: 10px;
     border-radius: 30px;
-    height: 500px;
+    height: 400px;
     background-color: var(--black);
     box-shadow: 5px 0 20px var(--purple), 0 5px 15px var(--orange), 0 0 5px var(--orangeL), 0 0 2.5px white;
+    text-decoration: none;
 }
-.main > div:hover {
+a > div:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
-.main > div.en {
+.en {
     grid-column: 1/5;
 }
-.main > div.to {
+.to {
     grid-column: 5/9;
 }
-.main > div.tre {
+.tre {
     grid-column: 9/13;
 }
 .main > h1 {
