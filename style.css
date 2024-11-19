@@ -113,24 +113,24 @@ section{
     justify-content: center;
     align-items: center;
 }
-.main > div {
+a > div {
     padding: 10px;
     border-radius: 30px;
     height: 400px;
     background-color: var(--black);
     box-shadow: 5px 0 20px var(--purple), 0 5px 15px var(--orange), 0 0 5px var(--orangeL), 0 0 2.5px white;
 }
-.main > div:hover {
+a > div:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
-.main > div.en {
+.en {
     grid-column: 1/5;
 }
-.main > div.to {
+.to {
     grid-column: 5/9;
 }
-.main > div.tre {
+.tre {
     grid-column: 9/13;
 }
 .main > h1 {
