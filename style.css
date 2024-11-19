@@ -113,12 +113,21 @@ section{
     justify-content: center;
     align-items: center;
 }
+a {
+    text-decoration: none;
+}
 a > div {
+    height: 80px;
+    width: 100%;
+    background-color: #ff7824;
+}
+a.link > div {
     padding: 10px;
     border-radius: 30px;
     height: 400px;
     background-color: var(--black);
     box-shadow: 5px 0 20px var(--purple), 0 5px 15px var(--orange), 0 0 5px var(--orangeL), 0 0 2.5px white;
+    text-decoration: none;
 }
 a > div:hover {
     transform: scale(1.05);
