@@ -11,13 +11,25 @@
     <style>
 
    
-
+        body{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 250px 450px 300px;
+        }
         .opptaktittel{
             margin: 100px 0px;
             text-align: center;
             grid-column: 1/4;
         }
-
+        .opptakstittel > h1 {
+                display: flex;
+                justify-content: center;
+                font-size: 350px;
+                width: 100%;
+                text-align: center;
+                letter-spacing: 0;
+                text-shadow: 10px 0 80px var(--purple), 0 10px 60px var(--orange), 0 0 20px var(--orangeL), 0 0 10px white;
+            }
 
         .micgif{
             margin: auto;
@@ -39,11 +51,7 @@
             color: white;
         }
 
-        body{
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-rows: 250px 450px 300px;
-        }
+        
 
         @media  (width<1650px) {
             .faktatekst{
@@ -80,6 +88,7 @@
             .opptaktittel{
                 grid-column: 1/2;
             }
+            
             .spenningsgraf {
                 grid-column: 1/2;
                 grid-row: 4/5;
@@ -128,12 +137,10 @@
        <div class="spacer"></div>
    </header>
     <div class="opptaktittel">
-
-    <h1>Opptak av lyd</h1>
-    
+        <h1>Opptak av lyd</h1>
     </div>
 
-    
+    <main>
         <div class="micgif">
             <img src="bilder/susmic.gif"
        
@@ -142,8 +149,7 @@
         </div>
 
         <div class="faktatekst">
-            <p>Det første som trengs for å skape lyd e
-                r bevegelse av luft. Når man en lyd, lager det lydbølger som
+            <p>Det første som trengs for å skape lyd er bevegelse av luft. Når man en lyd, lager det lydbølger som
                 treffer mikrofonen. I mikrofonen treffer lydbølgene en membran. Membranen er
                 koblet til en spole som dermed vil gå fram og tilbake langs en magnet. Da 
                 skapes det elektriske signaler som tas opp og lagres digitalt på en datamaskin eller forsterker.
@@ -166,7 +172,7 @@
                 re seg etter det og gi ulik mengde spenning mellom spolen og magneten. Det vil dermed bli tatt
                 opp med forskjellig spenning over tid.</p>
         </div>
-
         
+    </main>  
 </body>
 </html>
