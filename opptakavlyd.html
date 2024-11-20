@@ -42,6 +42,7 @@
             text-align: center;
             width: fit-content;
             color: white;
+            padding: 40px;
         }
         .spenningsgraf{
             margin: auto;
@@ -53,9 +54,18 @@
             color: white;
         }
 
+        p{
+            font-size: 20px;
+        }
+
         
 
         @media  (width<1650px) {
+            body{
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+            
             .faktatekst{
                 grid-row: 3/4;
                 grid-column: 1/2;
