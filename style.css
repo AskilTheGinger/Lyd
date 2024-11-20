@@ -244,13 +244,13 @@ p {
     background-color: var(--blue);
 }
 
-=======
+
 a > div > img {
     height: 200px;
     margin: 30px;
     border-radius: 20px;
 }
->>>>>>> fbf04a5479643b25510cf048dd3a8842f0196cbf
+
  
 
 @media  (width<800px){
