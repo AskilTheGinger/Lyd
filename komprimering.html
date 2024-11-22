@@ -9,81 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        #kompbody {
-            background: var(--black);
-            color: var(--white);
-            text-align: center;
-        }
-
-        #kompmain {
-            display: grid;
-            width: fit-content;
-            grid-template-columns: 1fr 1fr;
-            grid-auto-rows: 20vh;
-            
-            max-width: 60%;
-            column-gap: 50px;
-            margin: auto;
-            line-height: 25px;
-        }
-        #kompmain>*{
-            min-height: fit-content;
-        }
-
-        button {
-            background-color: var(--black);
-            padding: 10px;
-            width: 150px;
-            border: solid 2p darkmagenta;
-            border-radius: 10px;
-            box-shadow: 5px 0 20px var(--purple), 0 5px 15px var(--orange), 0 0 5px var(--orangeL), 0 0 2.5px white;
-            text-decoration: none;
-            margin: 10px;
-            color:white;
-            font-weight: bold;
-            
-        }
-        button:hover{
-            scale: 1.05;
-        }
-        
-
-       
-
-        @media (width<900px) {
-            #kompmain {
-                max-width: 90%;
-            }
-        }
-
-        @media (width<700px) {
-            #kompmain {
-                margin-top: 100px;
-                grid-template-columns: 1fr;
-                grid-auto-rows: min-content;
-            }
-
-            #komp-overs {
-                grid-column: 1/2;
-            }
-
-            #kompmain>* {
-                grid-column: 1/2;
-                grid-row: auto;
-            }
-
-            #compressed {
-                grid-column: 1/2;
-                grid-row: auto;
-            }
-
-            #uncompressed {
-                grid-column: 1/2;
-                grid-row: auto;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -130,9 +55,13 @@
                 nok
                 lydfil.
                 Når man snakker om lydfiler og Komprimering kan man dele lydfiler opp i hovedsakliginn i 3 typer:
-                Ukomprimerte lydfiler, tapsfri komprimering og tapsfull komprimering.
+                Ukomprimerte lydfiler(wav), tapsfri komprimering(mp4) og tapsfull komprimering(mp3).
+
             </p>
 
+        </div>
+        <div id="lydgraf">
+            <img src="bilder/komprimeringsgraf.jpg">
         </div>
         <div id="uncompressed">
             <p>Et ukomprimert soundbite av en hi-hat som er 122kb i størrelse</p>

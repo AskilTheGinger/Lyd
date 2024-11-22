@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+img {
+    width: 100%;
 }
 
 :root {
@@ -27,7 +32,7 @@ h1 {
     text-shadow: 1px 0 8px var(--purple), 0 1px 6px var(--orange), 0 0 2px var(--orangeL), 0 0 1px white;
 }
 
-i{
+i {
     color: white;
     padding: 20px;
 }
@@ -124,7 +129,6 @@ h2 {
 
 img.bolge {
     margin-top: -100px;
-    width: 100%;
     height: 300px;
     filter: invert(100%) drop-shadow(0 0 30px var(--orange));
 }
@@ -169,7 +173,7 @@ a>div:hover {
     transition: 0.3s;
 }
 
-#fancybokser{
+#fancybokser {
     grid-column: 1/13;
     display: flex;
     flex-direction: row;
@@ -177,13 +181,15 @@ a>div:hover {
     width: 100%;
     flex-wrap: wrap;
 }
-#fancybokser a{
+
+#fancybokser a {
     margin: 20px;
 }
-.main > h1 {
+
+.main>h1 {
     text-align: center;
     font-size: 100px;
-    padding: 50px 0px 50px 0px ;
+    padding: 50px 0px 50px 0px;
     font-weight: 500;
 }
 
@@ -191,12 +197,12 @@ p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-<<<<<<< HEAD
+
+/* komprimering av lyd */
 #komp-overs {
     grid-column: 1/3;
     grid-row: 1/2;
     position: relative;
-    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,12 +220,23 @@ p {
     background-color: var(--black);
     box-shadow: 5px 0 20px var(--purple), 0 5px 15px var(--orange), 0 0 5px var(--orangeL), 0 0 2.5px white;
     text-decoration: none;
-    
+
+}
+
+#lydgraf {
+    grid-row: 2/4;
+    grid-column: 2/3;
+
+}
+
+#lydgraf>img {
+    height: max-content;
+    border-radius: 20px;
 }
 
 #uncompressed {
-    grid-row: 2/3;
-    grid-column: 2/3;
+    grid-row: auto;
+    grid-column: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,8 +247,8 @@ p {
 
 
 #compressed {
-    grid-row: 3/4;
-    grid-column: 2/3;
+    grid-row: auto;
+    grid-column: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,25 +260,101 @@ p {
     background-color: var(--blue);
 }
 
+#kompbody {
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+}
 
-a > div > img {
+#kompmain {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+
+    max-width: 60%;
+    column-gap: 50px;
+    margin: 70px auto;
+    line-height: 25px;
+    gap: 20px;
+
+    z-index: 0;
+}
+
+
+
+button {
+    background-color: var(--black);
+    padding: 10px;
+    width: 150px;
+    border: solid 2p darkmagenta;
+    border-radius: 10px;
+    box-shadow: 5px 0 20px var(--purple), 0 5px 15px var(--orange), 0 0 5px var(--orangeL), 0 0 2.5px white;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+
+a>div>img {
     height: 200px;
     margin: 30px;
     border-radius: 20px;
 }
 
- 
+@media (width<1200px) {
+    #kompmain {
+        max-width: 90%;
+    }
+}
 
-@media  (width<800px){
-    
-    .opening>h1{
-        font-size:  200px;
+@media (width<800px) {
+
+    .opening>h1 {
+        font-size: 200px;
 
     }
-    #fancybokser>a{
+
+    #fancybokser>a {
         max-width: 80%;
-        
+
     }
-    #fancybokser>a>div{
-        max-width:100%;
+
+    #fancybokser>a>div {
+        max-width: 100%;
     }
+}
+
+@media (width<700px) {
+    #kompmain {
+        margin-top: 100px;
+        grid-template-columns: 1fr;
+        grid-auto-rows: min-content;
+        row-gap: 30px;
+    }
+
+    #komp-overs {
+        grid-column: 1/2;
+    }
+
+    #kompmain>* {
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    #compressed {
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    #uncompressed {
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+}
