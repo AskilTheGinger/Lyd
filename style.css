@@ -19,7 +19,6 @@ body {
 }
 
 h1 {
-    font-weight: 200px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: white;
@@ -244,6 +243,10 @@ p {
     background-color: var(--blue);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dfd9c9a1867b5b5ce42beac58f3719b97f82c724
 a > div > img {
     height: 200px;
     margin: 30px;
