@@ -387,29 +387,4 @@ a>div>img {
     h2 {
         font-size: 20px;
     }
-    /*#kompmain {
-        margin-top: 100px;
-        grid-template-columns: 1fr;
-        grid-auto-rows: min-content;
-        row-gap: 30px;
-    }
-
-    #komp-overs {
-        grid-column: 1/2;
-    }
-
-    #kompmain>* {
-        grid-column: 1/2;
-        grid-row: auto;
-    }
-
-    #compressed {
-        grid-column: 1/2;
-        grid-row: auto;
-    }
-
-    #uncompressed {
-        grid-column: 1/2;
-        grid-row: auto;
-    }*/
 }
